@@ -1,5 +1,7 @@
 import { styled } from 'styled-components';
 export const ProfileStyle = styled.div`
+  font-family: 'Montserrat';
+  font-weight: 600;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +11,6 @@ export const ProfileStyle = styled.div`
   box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
   text-align: center;
-  font-family: 'Montserrat';
-  font-weight: 600;
   padding: 15px;
   margin: 0 auto;
   margin-bottom: 30px;

@@ -1,5 +1,5 @@
+import { ProfileStyle } from './Profile.styled';
 
-import {ProfileStyle} from './Profile.styled';
 export const Profile = (user) => (
 <ProfileStyle>
   <div className="profile">

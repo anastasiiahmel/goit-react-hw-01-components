@@ -14,7 +14,7 @@ export const StatisticsStyle = styled.section`
   font-family: 'Montserrat';
   font-weight: 600;
   padding: 15px;
-  margin: 0;
+
   margin: 0 auto;
 
   .title {
