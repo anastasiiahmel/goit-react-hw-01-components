@@ -1,7 +1,9 @@
 import { styled } from 'styled-components';
+
 export const online = 'online';
 export const offline = 'offline';
-export const FriendListStyle = styled.ul`
+
+export const FriendListStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

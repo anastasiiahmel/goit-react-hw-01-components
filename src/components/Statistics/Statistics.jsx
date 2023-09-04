@@ -3,7 +3,7 @@ import {StatisticsStyle} from './StatisticsStyle.styled'
 export const Statistics = ({ title, stats }) => (
   <StatisticsStyle>
       <section className="statistics">
-  <h2 className="title">{title}</h2>
+  {title && <h2 className="title">{title}</h2>}
     <ul className="stat-list">
             {stats.map(data => (
                 <li className="item" 

@@ -1,14 +1,23 @@
-import { FriendListStyle } from './FriendList.styled';
-import { online, offline } from './FriendList.styled';
+import { FriendListStyle } from 'components/FriendListItem/FriendList.styled';
 
-export const FriendList = ({friends}) => (
-    <FriendListStyle>
+import { FriendListItem } from 'components/FriendListItem/FriendListItem';
+
+export const FriendList = ({ friends }) =>
+(
+  <FriendListStyle>
+    <ul className="friend-list">
         {friends.map(({id, name, isOnline, avatar}) => (
-        <li key={id} className="item" >
-            <span className={`status ${isOnline ? online : offline}`}></span>
-            <img className="avatar" src={avatar} alt={name} />
-            <p className="name">{name}</p>
-        </li>
+             <FriendListItem
+        key={id}
+          avatar={avatar}
+          name={name}
+          isOnline={isOnline}
+       />
         ))}
+    </ul>
     </FriendListStyle>
-);
+)
+
+
+
+
